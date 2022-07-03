@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "my-banner":"../../subPages/banner/banner",
+    "my-home-card":"../../../components/homecard/homecard",
+    "my-indexfooter":"../../subPages/indexfooter/indexfooter"
+  },
+  "navigationBarTitleText": "好物转运",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#4e148c",
+  "navigationBarTextStyle": "white"
+}

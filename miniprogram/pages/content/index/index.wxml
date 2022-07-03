@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<block>
+    <view>
+        <my-banner />
+    </view>
+    <view class="indexCard">
+        <my-home-card data="{{cardDataOne}}" bindclick="cardClick1" />
+        <my-home-card data="{{cardDataTwo}}" bindclick="cardClick2"   bcgColor="#fc9d62" textColor="#e7691d" iconColor="#ff6200" imgSize="64px" />
+    </view>
+    <view>
+        <my-indexfooter></my-indexfooter>
+    </view>
+</block>

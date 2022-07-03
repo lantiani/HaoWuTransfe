@@ -1,14 +1,46 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/content/index/index",
+        "pages/content/cheap/cheap",
+        "pages/content/order/order",
+        "pages/content/my/my",
+        "pages/subPages/indexfooter/indexfooter"
+    ],
+    "tabBar": {
+        "selectedColor": "#4e148c",
+        "list": [
+            {
+                "pagePath": "pages/content/index/index",
+                "text": "首页",
+                "iconPath": "/assets/images/home.png",
+                "selectedIconPath": "/assets/images/home-active.png"
+            },
+            {
+                "pagePath": "pages/content/cheap/cheap",
+                "text": "优惠券",
+                "iconPath": "/assets/images/yhq.png",
+                "selectedIconPath": "/assets/images/yhq-active.png"
+            },
+            {
+                "pagePath": "pages/content/order/order",
+                "text": "订单",
+                "iconPath": "/assets/images/order.png",
+                "selectedIconPath": "/assets/images/order-active.png"
+            },
+            {
+                "pagePath": "pages/content/my/my",
+                "text": "我的",
+                "iconPath": "/assets/images/my.png",
+                "selectedIconPath": "/assets/images/my-active.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,32 @@
+<!--pages/subPages/banner/banner.wxml-->
+<block>
+    <view class="container">
+        <view class="swiperBg">
+            <swiper class="swiper" indicator-dots indicator-color="rgba(255, 255, 255, .3)" autoplay circular>
+                <swiper-item class="swiperItem" wx:for="{{bannerData}}" wx:key="id">
+                    <image class="image" mode="aspectFill" src="{{item.img}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+
+        <view class="cardWarp">
+            <view class="cradText">
+                <text class="text">中国</text>
+                <image class="cradImg" mode="aspectFill" src="../../../assets/images/icon-fj.svg"></image>
+                <text class="text" bindtap="address">美国</text>
+            </view>
+            <button class="btn" bindtap="transport">立即转运</button>
+        </view>
+
+        <view class="serviceWarp" bindtap="call">
+            <image class="img" mode="aspectFill" src="../../../assets/images/iocn-kf.png"></image>
+            <view class="servicecontent">
+                <view class="serviceText">
+                    <text class="textOne">联系河马</text>
+                    <text class="textTwo">为您解决下单疑问?</text>
+                </view>
+                <image class="img" src="../../../assets/images/left2.svg"></image>
+            </view>
+        </view>
+    </view>
+</block>

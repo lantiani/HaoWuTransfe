@@ -1,0 +1,14 @@
+<!--pages/subPages/indexfooter/indexfooter.wxml-->
+<block>
+    <view class="footerText">
+        轻松转运
+    </view>
+    <view class="footerImg">
+        <image class="image" mode="aspectFill" src="../../../assets/images/footer.png"></image>
+    </view>
+    <view class="footerBtn" bindtap="copyAddress">
+        <text>复制仓库地址去购物</text>
+    </view>
+    <text class="footerTextTwo">电商平台的地址请填写我们</text>
+    
+</block>

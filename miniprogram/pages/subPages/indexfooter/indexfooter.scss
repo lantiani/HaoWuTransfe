@@ -1,0 +1,41 @@
+/* pages/subPages/indexfooter/indexfooter.wxss */
+.footerText {
+    color: rgba(0, 0, 0, 1);
+    font-size: 56rpx;
+    text-align: left;
+    font-family: PingFangSC-semiBold;
+    margin-left: 20rpx;
+    font-weight: 700;
+}
+
+.footerImg {
+    width: 750rpx;
+    height: 218rpx;
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footerBtn {
+    width: 660rpx;
+    height: 80rpx;
+    border-radius: 38rpx;
+    background-color: rgba(76, 22, 142, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: 32rpx;
+    font-family: Microsoft Yahei;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80rpx auto 20rpx;
+}
+
+.footerTextTwo {
+    display: flex;
+    justify-content: center;
+    color: rgba(76, 22, 142, 100);
+    font-size: 28rpx;
+    margin-bottom: 80rpx;
+}
