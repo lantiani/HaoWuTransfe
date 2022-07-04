@@ -18,6 +18,14 @@
             <button class="btn" bindtap="transport">立即转运</button>
         </view>
 
+        <van-dialog use-slot title="预选渠道" show="{{ lodShow }}" show-cancel-button bind:close="onClose" bind:getuserinfo="getUserInfo" bind:confirm="nextStep" confirmButtonText="下一步" confirm-button-color="#1aad19">
+            <view class="dialog">
+                <view class="disBtn" style="background-color: {{bcgColor == index ? '#000080' : ''}}; color: {{bcgColor == index ? '#fff' : ''}};" 
+                bindtap="getIndex" data-index="{{index}}"
+                wx:for="{{btnData}}" wx:key="id">{{item.text}}</view>
+            </view>
+        </van-dialog>
+
         <view class="serviceWarp" bindtap="call">
             <image class="img" mode="aspectFill" src="../../../assets/images/iocn-kf.png"></image>
             <view class="servicecontent">

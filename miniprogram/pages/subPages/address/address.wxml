@@ -1,0 +1,20 @@
+<!--pages/subPages/address/address.wxml-->
+<view class="searchAddress">
+    <van-icon name="search" />
+    <input type="text" placeholder="选择国家或地区" />
+</view>
+<block>
+    <van-index-bar index-list="{{indexList}}">
+        <view wx:for="{{indexList}}" wx:key="index" wx:for-item="key" style="background-color: #f8f8f8;">
+            <van-index-anchor index="{{key}}"></van-index-anchor>
+            <view>
+            <van-cell wx:if="{{addressData[index].sign === key}}" bindtap="selectedAddress" data-address="{{item.title}}" wx:for="{{addressData}}"  wx:key="id">
+                <view slot="title" class="flex_b_c">
+                    <text>{{item.title}}</text>
+                    <text>{{item.english}}</text>
+                </view>
+            </van-cell>
+            </view>
+        </view>
+    </van-index-bar>
+</block>

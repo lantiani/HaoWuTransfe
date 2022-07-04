@@ -3,19 +3,20 @@
   .swiperBg {
     width: 100%;
     height: 50vh;
-    background-color: #4e148c;
+    background-color: #000080;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     margin: 0 auto;
 
     .swiper {
-      margin: 30px 10px;
+      margin: 0 20rpx 60rpx;
+      padding-top: 60rpx;
 
       .swiperItem {
         display: flex;
         justify-content: center;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 40rpx;
         overflow: hidden;
 
         .image {
@@ -30,12 +31,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 38%;
+    top: 40%;
     width: 624rpx;
     height: 386rpx;
     border-radius: 14px;
-    background-color: rgba(255, 255, 255, 100);
-    box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3*2rpx 7*2rpx 2*2rpx rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(187, 187, 187, 100);
     display: flex;
     flex-direction: column;
@@ -57,22 +58,20 @@
   }
 
   .btn {
-    background-color: #4E148C;
+    background-color: #000080;
     color: #fff;
   }
 
   .serviceWarp {
-    margin-top: 280rpx;
+    margin: 0 auto;
+    margin-top: 300rpx;
     width: 96%;
     height: 100rpx;
     border-radius: 64rpx;
     background-color: rgba(255, 102, 0, 100);
     color: rgba(16, 16, 16, 100);
-    font-size: 14px;
-    font-family: Arial;
+    font-size: 28rpx;
     display: flex;
-
-
 
     .img {
       width: 100rpx;
@@ -88,6 +87,7 @@
       align-items: center;
       justify-content: space-between;
       margin-right: 20rpx;
+
       .serviceText {
         color: #fff;
         display: flex;
@@ -110,6 +110,26 @@
         width: 60rpx;
         height: 60rpx;
       }
+    }
+  }
+
+  .dialog {
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .disBtn {
+      width: 228rpx;
+      height: 86rpx;
+      border-radius: 14rpx;
+      border: 2rpx solid rgba(187, 187, 187, 100);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20rpx;
+      color: #000080;
     }
   }
 }

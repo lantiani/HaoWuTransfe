@@ -5,12 +5,12 @@
         <view class="cardText">{{data.text}}</view>
 
         <view class="imageWarp">
-        <view class="arrowLeft" style="background-color: {{iconColor}};">
-            <image class="image" mode="aspectFill" src="{{data.icon}}"></image>
+            <view class="arrowLeft" style="background-color: {{iconColor}};">
+                <image class="image" mode="aspectFill" src="{{data.icon}}"></image>
+            </view>
+            <view class="imageCart">
+                <image style="height: {{imgSize}}; width: {{imgSize}};" mode="aspectFill" src="{{data.iconCart}}"></image>
+            </view>
         </view>
-        <view class="imageCart">
-            <image style="height: {{imgSize}}; width: {{imgSize}};" mode="aspectFill" src="{{data.iconCart}}"></image>
-        </view>
-    </view>
     </view>
 </view>

@@ -2,10 +2,12 @@
   "usingComponents": {
     "my-banner":"../../subPages/banner/banner",
     "my-home-card":"../../../components/homecard/homecard",
-    "my-indexfooter":"../../subPages/indexfooter/indexfooter"
+    "my-indexfooter":"../../subPages/indexfooter/indexfooter",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-button": "@vant/weapp/button/index"
   },
   "navigationBarTitleText": "好物转运",
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#4e148c",
+  "navigationBarBackgroundColor": "#000080",
   "navigationBarTextStyle": "white"
 }

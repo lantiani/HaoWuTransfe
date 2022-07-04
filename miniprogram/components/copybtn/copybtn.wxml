@@ -1,0 +1,4 @@
+<!--components/copybtn/copybtn.wxml-->
+<view class="footerBtn" bindtap="copyAddress" style="background-color: {{bcgColor}};" bindtap="copyAdd" data-res="{{bcgColor}}">
+    <text>复制仓库地址去购物</text>
+</view>

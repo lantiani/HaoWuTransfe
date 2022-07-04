@@ -6,9 +6,9 @@
     <view class="footerImg">
         <image class="image" mode="aspectFill" src="../../../assets/images/footer.png"></image>
     </view>
-    <view class="footerBtn" bindtap="copyAddress">
-        <text>复制仓库地址去购物</text>
-    </view>
+    <!-- 按钮 -->
+    <copy-btn bindcopy="navigator" />
+
     <text class="footerTextTwo">电商平台的地址请填写我们</text>
     
 </block>

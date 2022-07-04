@@ -4,10 +4,13 @@
         "pages/content/cheap/cheap",
         "pages/content/order/order",
         "pages/content/my/my",
-        "pages/subPages/indexfooter/indexfooter"
+        "pages/subPages/indexfooter/indexfooter",
+        "pages/subPages/copyaddress/copyaddress",
+        "pages/subPages/address/address",
+        "pages/subPages/zyaddress/zyaddress"
     ],
     "tabBar": {
-        "selectedColor": "#4e148c",
+        "selectedColor": "#000080",
         "list": [
             {
                 "pagePath": "pages/content/index/index",
@@ -41,6 +44,5 @@
         "navigationBarTitleText": "Weixin",
         "navigationBarTextStyle": "black"
     },
-    "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

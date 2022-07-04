@@ -1,11 +1,45 @@
 <!--index.wxml-->
 <block>
     <view>
-        <my-banner />
+        <view class="container">
+            <view class="swiperBg">
+                <swiper class="swiper" indicator-dots indicator-color="rgba(255, 255, 255, .3)" autoplay circular>
+                    <swiper-item class="swiperItem" wx:for="{{bannerData}}" wx:key="id">
+                        <image class="image" mode="aspectFill" src="{{item.img}}"></image>
+                    </swiper-item>
+                </swiper>
+            </view>
+
+            <view class="cardWarp">
+                <view class="cradText">
+                    <text class="text">中国</text>
+                    <image class="cradImg" mode="aspectFill" src="../../../assets/images/icon-fj.svg"></image>
+                    <text class="text" bindtap="address">{{address}}</text>
+                </view>
+                <button class="btn" bindtap="transport">立即转运</button>
+            </view>
+
+            <van-dialog use-slot title="预选渠道" show="{{ lodShow }}" show-cancel-button bind:close="onClose" bind:getuserinfo="getUserInfo" bind:confirm="nextStep" confirmButtonText="下一步" confirm-button-color="#1aad19">
+                <view class="dialog">
+                    <view class="disBtn" style="background-color: {{bcgColor == index ? '#000080' : ''}}; color: {{bcgColor == index ? '#fff' : ''}};" bindtap="getIndex" data-index="{{index}}" wx:for="{{btnData}}" wx:key="id">{{item.text}}</view>
+                </view>
+            </van-dialog>
+
+            <view class="serviceWarp" bindtap="call">
+                <image class="img" mode="aspectFill" src="../../../assets/images/iocn-kf.png"></image>
+                <view class="servicecontent">
+                    <view class="serviceText">
+                        <text class="textOne">联系河马</text>
+                        <text class="textTwo">为您解决下单疑问?</text>
+                    </view>
+                    <image class="img" src="../../../assets/images/left2.svg"></image>
+                </view>
+            </view>
+        </view>
     </view>
     <view class="indexCard">
         <my-home-card data="{{cardDataOne}}" bindclick="cardClick1" />
-        <my-home-card data="{{cardDataTwo}}" bindclick="cardClick2"   bcgColor="#fc9d62" textColor="#e7691d" iconColor="#ff6200" imgSize="64px" />
+        <my-home-card data="{{cardDataTwo}}" bindclick="cardClick2" bcgColor="#fc9d62" textColor="#e7691d" iconColor="#ff6200" imgSize="64px" />
     </view>
     <view>
         <my-indexfooter></my-indexfooter>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "copy-btn":"../../../components/copybtn/copybtn"
+  },
+  "navigationBarTitleText": "仓库地址",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#8470ff",
+  "navigationBarTextStyle": "white"
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarTitleText": "填写地址",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#4169e1",
+  "navigationBarTextStyle": "white"
+}

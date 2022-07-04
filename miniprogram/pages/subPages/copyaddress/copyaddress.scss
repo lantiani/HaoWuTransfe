@@ -1,0 +1,59 @@
+/* pages/subPages/copyaddress/copyaddress.wxss */
+.container {
+    margin: 16*2rpx auto;
+    padding: 15*2rpx 20*2rpx;
+    width: 347*2rpx;
+    height: 229*2rpx;
+    opacity: 0.85;
+    border-radius: 3*2rpx;
+    background-color: rgba(255, 255, 255, 79);
+    color: rgba(16, 16, 16, 100);
+    font-size: 14*2rpx;
+    box-shadow: 0*2rpx 2*2rpx 10*2rpx 0*2rpx rgba(0, 0, 0, 0.4);
+    border: 1*2rpx solid rgba(255, 255, 255, 100);
+
+    .addressWarp {
+        font-weight: 700;
+        align-self: start;
+
+        .addressIcon {
+            width: 20*2rpx;
+            height: 20*2rpx;
+            background-color: #ffa726;
+            border-radius: 50%;
+        }
+
+        .addressText {
+            font-size: 20*2rpx;
+        }
+    }
+
+    .copyForm {
+        .addressee {
+            width: 100%;
+            height: 22*2rpx;
+            color: rgba(16, 16, 16, 100);
+            font-size: 16*2rpx;
+            font-family: PingFangSC-regular;
+            margin: 15*2rpx 0;
+            font-weight: 550;
+
+            .addInput {
+                flex: 1;
+                text-align: left;
+                color: rgba(0, 0, 0, 1);
+                font-size: 16*2rpx;
+                margin-left: 10*2rpx;
+            }
+        }
+    }
+
+    .addText {
+        margin-bottom: 25*2rpx;
+        .addTitle {
+            font-size: 18*2rpx;
+            font-weight: 600;
+            color: #000;
+        }
+    }
+}
