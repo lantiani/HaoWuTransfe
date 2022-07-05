@@ -1,6 +1,6 @@
 <!--pages/subPages/zyaddress/zyaddress.wxml-->
 <view class="container">
-    <view class="zyWarp">
+    <!-- <view class="zyWarp">
         <view class="flex_l_c addressWarp">
             <view class="addressIcon flex_c_c">
                 <van-icon name="location-o" color="#fff" />
@@ -15,13 +15,13 @@
         <view class="flex_l_c zyAddress">
             <text style="margin-left: 32rpx;">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</text>
         </view>
-    </view>
-
+    </view> -->
+    <my-house></my-house>
     <view class="addressCard">
         <view class="cardWarp">
             <view class="cardText">目标国收件信息</view>
             <view class="cueWarp flex_b_c">
-                <view class="cueText">
+                <view class="cueText" style="color: {{status ? cueColor : inColor}};">
                     <van-icon name="info-o" />
                     请用英文填写
                 </view>
@@ -33,7 +33,7 @@
         <view class="addressWarp">
             <view class="addressItem" wx:for="{{userInfo}}" wx:key="id">
                 <text class="title">{{item.title}}:</text>
-                <input class="input" type="text" placeholder="{{item.value}}"/>
+                <input class="input" style="color: {{item.state ? '': inColor}};" data-item="{{item}}" type="text" data-index="{{index}}" bindinput="inputVal" placeholder="{{item.value}}" />
             </view>
         </view>
     </view>

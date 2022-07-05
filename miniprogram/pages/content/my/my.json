@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "my-icon":"../../../components/myordericon/myordericon",
+    "my-info":"../../../components/myinfo/myinfo"
+  },
+  "navigationBarTitleText": "我的",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fbc02d",
+  "navigationBarTextStyle": "white"
 }

@@ -14,7 +14,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/content/index/index",
+                    "pathName": "pages/subPages/myaddress/myaddress",
                     "query": "",
                     "scene": null,
                     "launchMode": "default"

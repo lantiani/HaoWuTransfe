@@ -1,0 +1,56 @@
+/* components/myaddressc/myaddressc.wxss */
+@import "../../assets/common/common.scss";
+.addressContent {
+    padding: 10*2rpx;
+    padding-left: 0;
+    .addressWarp {
+        width: 375*2rpx;
+        background-color: rgba(255, 255, 255, 100);
+        border: 1*2rpx solid rgba(255, 255, 255, 100);
+        font-size: 12*2rpx;
+        padding: 0 10*2rpx;
+        box-sizing: border-box;
+
+        .myIcon {
+            width: 32*2rpx;
+            height: 32*2rpx;
+            border-radius: 50%;
+            color: #fff;
+            flex: 1;
+            margin-right: 10*2rpx;
+        }
+
+        .addressCard {
+            flex: 9;
+        }
+    }
+
+    .addressCard {
+        .myInfo {
+            .userName {
+                flex: 2;
+            }
+
+            .myPhone {
+                flex: 8;
+            }
+        }
+        .myAddress {
+            color: #a7a1a7;
+            font-size: 11*2rpx;
+            line-height: 18*2rpx;
+            margin-top: 10*2rpx;
+        }
+    }
+    .iconWarp {
+        margin-top: 10*2rpx;
+        .radio {
+            transform: scale(0.7);
+            width: 170*2rpx;
+        }
+        .iconCard {
+            width: 50*2rpx;
+        }
+    }
+
+}

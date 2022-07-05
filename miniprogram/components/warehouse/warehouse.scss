@@ -1,0 +1,56 @@
+/* components/warehouse/warehouse.wxss */
+@import "../../assets/common/common.scss";
+.zyWarp {
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 347px;
+    height: 135px;
+    opacity: 0.85;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 79);
+    color: rgba(16, 16, 16, 100);
+    font-size: 14px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 100);
+    box-sizing: border-box;
+    font-size: 16px;
+
+    .addressWarp {
+        font-weight: 700;
+        align-self: start;
+
+        .addressIcon {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        .addressText {
+            margin-left: 10px;
+        }
+    }
+
+    .zyPhone {
+        margin: 12px;
+        font-size: 15px;
+        color: #101010;
+
+        .zyCopy {
+            width: 32px;
+            height: 12px;
+            border-radius: 4px;
+            background-color: #63adfc;
+            color: blue;
+            font-size: 12px;
+            font-family: Microsoft Yahei;
+            border: 1px solid #63adfc;
+            margin-left: 10px;
+        }
+    }
+
+    .zyAddress {
+        margin: 12px;
+        font-size: 12px;
+    }
+}

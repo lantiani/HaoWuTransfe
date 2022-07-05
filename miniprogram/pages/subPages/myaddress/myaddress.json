@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-addressc":"../../../components/myaddressc/myaddressc"
+  },
+  "navigationBarTitleText": "我的地址",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ffa726",
+  "navigationBarTextStyle": "white"
+}

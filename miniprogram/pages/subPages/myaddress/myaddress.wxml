@@ -1,0 +1,4 @@
+<!--pages/subPages/myaddress/myaddress.wxml-->
+<view class="container">
+    <my-addressc userAddressData="{{myAddressData}}" bindradioaddress="userAddressRadio" bindaddressEdit="editAddress" bindaddressDel="delAddress" />
+</view>

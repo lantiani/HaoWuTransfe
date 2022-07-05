@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "my-house":"../../../components/warehouse/warehouse",
     "van-icon": "@vant/weapp/icon/index"
   },
   "navigationBarTitleText": "填写地址",

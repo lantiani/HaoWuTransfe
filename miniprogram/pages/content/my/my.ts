@@ -5,62 +5,20 @@ Page({
      * 页面的初始数据
      */
     data: {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+        orderIcon: [
+            { id: 1, icon: "paid", title: "待付款", page: "/pages/subPages/payment/payment" },
+            { id: 2, icon: "logistics", title: "待发货", page: "/pages/subPages/sendgoods/sendgoods" },
+            { id: 3, icon: "gift-o", title: "待收货", page: "/pages/subPages/takegoods/takegoods" },
+            { id: 4, icon: "more-o", title: "待评价", page: "/pages/subPages/appraise/appraise" },
+        ],
+        myData: [
+            { id: 1, title: "我的地址", icon: "arrow", page: "" },
+            { id: 2, title: "我的优惠券", icon: "arrow", page: "" },
+            { id: 3, title: "活动中心", icon: "arrow", page: "" },
+            { id: 4, title: "联系客服", icon: "arrow", page: "" },
+            { id: 5, title: "转运流程", icon: "arrow", page: "" },
+            { id: 6, title: "转运须知", icon: "arrow", page: "" },
+            { id: 7, title: "关于我们", icon: "arrow", page: "" }
+        ]
     }
 })

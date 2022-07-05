@@ -36,7 +36,7 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        fn(e:any){
+        fn(this:any,e:any){
             const {res} = e.currentTarget.dataset
             this.triggerEvent('click',res)
         }

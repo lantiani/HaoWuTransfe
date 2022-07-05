@@ -1,0 +1,17 @@
+<!--components/warehouse/warehouse.wxml-->
+<view class="zyWarp">
+    <view class="flex_l_c addressWarp">
+        <view class="addressIcon flex_c_c">
+            <van-icon name="location-o" color="#fff" />
+        </view>
+        <text class="addressText">仓库地址</text>
+    </view>
+    <view class="flex_l_c zyPhone">
+        <text style="margin-left: 32rpx;">好物仓库:</text>
+        <text>15876199988</text>
+        <view class="zyCopy flex_c_c" bindtap="copy" data-phone="15876199988">复制</view>
+    </view>
+    <view class="flex_l_c zyAddress">
+        <text style="margin-left: 32rpx;">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</text>
+    </view>
+</view>

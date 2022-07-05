@@ -1,0 +1,38 @@
+/* components/myordericon/myordericon.wxss */
+.myOrderIcon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24rpx;
+    border-radius: 14rpx;
+
+    .iconWarp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20*2rpx 10*2rpx 10*2rpx;
+        padding-right: 10*2rpx;
+
+        .icon {
+            font-size: 28*2rpx;
+            color: #fbc02d;
+            margin-bottom: 8rpx;
+        }
+
+        &::after {
+            content: "";
+            height: 20*2rpx;
+            border-right: 1*2rpx solid #ccc;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -10*2rpx;
+        }
+
+        &:last-child::after {
+            border: none;
+        }
+    }
+}

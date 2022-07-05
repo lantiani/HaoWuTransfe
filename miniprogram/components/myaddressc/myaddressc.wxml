@@ -1,0 +1,24 @@
+<!--components/myaddressc/myaddressc.wxml-->
+<view class="addressContent" wx:for="{{userAddressData}}" wx:key="id">
+    <view class="addressWarp flex_c_c">
+        <view class="myIcon flex_c_c" style="background-color: {{item.bcgColor}};">{{item.name[0]}}</view>
+        <view class="addressCard">
+            <view class="myInfo flex_l_c">
+                <view class="userName">{{item.name}}</view>
+                <view class="myPhone">{{item.tel}}</view>
+            </view>
+            <view class="myAddress">
+                {{item.county}},{{item.city}},{{item.county}}
+            </view>
+        </view>
+    </view>
+    <view class="iconWarp flex_b_c">
+        <radio-group bindtap="changeRadio" data-userAddress="{{item}}">
+            <radio style="color: {{!item.status || '#ffa726' }};" checked="{{item.status}}" color="#ffa726" class="radio">{{item.status ? '默认寄件地址' : '设为默认寄件地址'}}</radio>
+        </radio-group>
+        <view class="iconCard flex_a_c">
+            <van-icon name="edit" bindtap="edit" data-userAddress="{{item}}" />
+            <van-icon name="delete-o" bindtap="del" data-addressId="{{item.id}}"/>
+        </view>
+    </view>
+</view>

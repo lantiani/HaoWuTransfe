@@ -1,0 +1,7 @@
+<!--components/myordericon/myordericon.wxml-->
+<view class="myOrderIcon">
+    <navigator open-type="navigate" url="{{item.page}}" class="iconWarp" wx:for="{{data}}" wx:key="id" >
+        <van-icon class="icon" info="2" name="{{item.icon}}" />
+        <text>{{item.title}}</text>
+    </navigator>
+</view>

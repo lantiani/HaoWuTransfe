@@ -7,7 +7,12 @@
         "pages/subPages/indexfooter/indexfooter",
         "pages/subPages/copyaddress/copyaddress",
         "pages/subPages/address/address",
-        "pages/subPages/zyaddress/zyaddress"
+        "pages/subPages/zyaddress/zyaddress",
+        "pages/subPages/myaddress/myaddress",
+        "pages/subPages/payment/payment",
+        "pages/subPages/sendgoods/sendgoods",
+        "pages/subPages/takegoods/takegoods",
+        "pages/subPages/appraise/appraise"
     ],
     "tabBar": {
         "selectedColor": "#000080",

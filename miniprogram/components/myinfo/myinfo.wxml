@@ -1,0 +1,5 @@
+<!--components/myinfo/myinfo.wxml-->
+<navigator open-type="navigate" url="{{item.page}}" class="flex_b_c myAddress" wx:for="{{myinfo}}" wx:key="id">
+    <view>{{item.title}}</view>
+    <van-icon name="{{item.icon}}" />
+</navigator>

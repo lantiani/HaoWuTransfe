@@ -1,2 +1,24 @@
 <!--pages/subPages/my/my.wxml-->
-<text>pages/subPages/my/my.wxml</text>
+<view class="container">
+    <view class="myTop">
+        <view class="topWarp flex_l_c">
+            <image class="picture" mode="aspectFill" src="../../../assets/images/3.jpg"></image>
+            <view class="userInfo">
+                <view class="username">AAA</view>
+                <view>编码:HAHA</view>
+            </view>
+        </view>
+    </view>
+    <view class="myOrderWarp">
+        <view class="myOrder flex_b_c">
+            <view>我的订单</view>
+            <view>全部订单 <van-icon name="arrow" /></view>
+        </view>
+        <view>
+            <my-icon data="{{orderIcon}}"></my-icon>
+        </view>
+    </view>
+    <view class="skipPages">
+        <my-info myinfo="{{myData}}"></my-info>
+    </view>
+</view>
