@@ -1,0 +1,4 @@
+<!--pages/subPages/addaddress/addaddress.wxml-->
+<view class="container">
+    <my-addresc bindformData="getFormData" bindoff="changeOff" titleColor="#8bc34a" isShow></my-addresc>
+</view>

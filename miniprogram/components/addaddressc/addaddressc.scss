@@ -1,0 +1,71 @@
+/* components/addaddressc.wxss */
+@import "../../assets/common/common.scss";
+
+.addressWarp {
+
+    .addressItem {
+        display: flex;
+        font-size: 14px;
+        margin: 20px 0;
+
+        .title {
+            flex: 2;
+            text-align: right;
+        }
+
+        .input {
+            flex: 8;
+            margin-left: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5rpx;
+        }
+    }
+}
+
+
+.country {
+    position: relative;
+
+    .text {
+        flex: 2;
+        text-align: right;
+    }
+
+    .input {
+        flex: 8;
+        margin-left: 40rpx;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5rpx;
+        padding-left: 180rpx;
+        font-size: 28rpx;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 0;
+        bottom: 10rpx;
+        color: #666;
+    }
+}
+
+.openWarp {
+    margin-top: 20rpx;
+}
+
+.area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.addAddressBtn {
+    margin: 30px auto;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #8bc34a;
+    color: rgba(255, 255, 255, 100);
+    font-size: 14px;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}

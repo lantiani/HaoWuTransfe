@@ -1,1 +1,22 @@
 /* pages/subPages/cheap/cheap.wxss */
+.container {
+    height: 20vh;
+    width: 100%;
+    background-color: #ff222c;
+    color: rgba(255, 255, 255, 100);
+    font-size: 14px;
+
+}
+
+.cheapWarp {
+    margin: 10px auto;
+    width: 333px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .cheapImg {
+        height: 100%;
+        width: 100%;
+    }
+}

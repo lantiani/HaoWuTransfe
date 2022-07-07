@@ -1,1 +1,8 @@
 <!--pages/subPages/cheap/cheap.wxml-->
+
+<view class="container">
+
+</view>
+<view class="cheapWarp" wx:for="{{cheapCard}}" wx:key="id" bindtap="changeCheap" data-cheap="{{item.id}}">
+    <image class="cheapImg" mode="aspectFit" src="{{item.src}}"></image>
+</view>

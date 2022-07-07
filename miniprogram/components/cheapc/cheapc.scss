@@ -1,0 +1,123 @@
+/* components/cheap/cheap.wxss */
+@import "../../assets/common/common.scss";
+
+.container {
+    position: relative;
+    margin: 10*2rpx auto;
+    width: 350*2rpx;
+    height: 100*2rpx;
+    border-radius: 10*2rpx;
+    text-align: center;
+    box-shadow: 0*2rpx 0*2rpx 6*2rpx 0*2rpx rgba(255, 247, 230, 100);
+
+    .yhqWarp {
+        position: relative;
+        width: 134*2rpx;
+        height: 100*2rpx;
+
+        .yhqBg {
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .yhqPrice {
+            position: absolute;
+            top: 0;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .price {
+                margin-right: 5*2rpx;
+                font-size: 48*2rpx;
+            }
+
+            .yuan {
+                font-size: 14*2rpx;
+            }
+        }
+    }
+
+    .yhqContent {
+        flex: 1;
+        text-align: left;
+        padding: 10*2rpx 0 0 10*2rpx;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 14*2rpx;
+
+        .yhqTitle {
+            font-size: 18*2rpx;
+            font-weight: 700;
+        }
+
+        .yhqTime {
+            color: #BFBFBF;
+        }
+
+    }
+
+    .yhqIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 63*2rpx;
+        height: 64*2rpx;
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        .iconText {
+            position: absolute;
+            top: 18*2rpx;
+            right: 4*2rpx;
+            transform: rotate(48deg);
+            font-size: 12*2rpx;
+            color: #fff;
+        }
+    }
+
+    .used {
+        position: absolute;
+        right: 26*2rpx;
+        top: 18*2rpx;
+        width: 80*2rpx;
+        height: 80*2rpx;
+
+        .usedImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.btn {
+    margin: 80rpx auto;
+    width: 176*2rpx;
+    height: 36*2rpx;
+    border-radius: 4*2rpx;
+    background-color: rgba(11, 115, 247, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: 14*2rpx;
+}
+
+.inputWarp {
+    width: 100%;
+
+    .input {
+        border: 2rpx solid #ccc;
+        width: 80%;
+        border-radius: 18rpx;
+        font-size: 24rpx;
+        padding-left: 20rpx;
+    }
+}

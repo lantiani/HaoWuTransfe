@@ -1,0 +1,94 @@
+/* components/cheapdetailc/cheapdetailc.wxss */
+@import "../../assets/common/common.scss";
+
+.container {
+    padding-top: 20rpx;
+    .cheapWarp {
+        .cheapTop {
+            margin: 10*2rpx auto;
+            width: 355*2rpx;
+            // height: 121*2rpx;
+            border-radius: 6*2rpx;
+            background-color: rgba(255, 255, 255, 100);
+            border-bottom: 1*2rpx red dashed;
+
+            .cheapLeft {
+                padding-right: 30*2rpx;
+                padding-bottom: 10*2rpx;
+                border-right: 1*2rpx red dashed;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                .cheapPrice {
+
+                    .price {
+                        width: 48*2rpx;
+                        height: 35*2rpx;
+                        font-size: 40*2rpx;
+                        font-weight: 700;
+                        color: #444444;
+                        border-right: unset red 1*2rpx;
+                    }
+                }
+
+                .priceText {
+                    font-size: 12*2rpx;
+                }
+
+            }
+
+            .cheapRight {
+                font-size: 13*2rpx;
+                padding: 10*2rpx;
+                .cheapTitle {
+                    .reduce {
+                        width: 36*2rpx;
+                        height: 15*2rpx;
+                        margin-right: 5*2rpx;
+                        font-size: 12*2rpx;
+                    }
+                }
+
+                .expire {
+                    font-size: 10*2rpx;
+                    color: #999;
+                    margin-top: 10*2rpx;
+
+                    .down {
+                        color: #F6390D;
+                    }
+
+                    .btn {
+                        width: 64*2rpx;
+                        height: 26*2rpx;
+                        border-radius: 17*2rpx;
+                        background-color: #f6390d;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .all {
+            padding: 0 20*2rpx;
+            font-size: 12*2rpx;
+        }
+    }
+
+    .chearpContent {
+        font-size: 14*2rpx;
+        padding: 20*2rpx;
+        color: #444444;
+
+        .title {
+            font-size: 20*2rpx;
+            margin-bottom: 20*2rpx;
+        }
+
+        .rule {
+            margin-top: 30*2rpx;
+        }
+    }
+}

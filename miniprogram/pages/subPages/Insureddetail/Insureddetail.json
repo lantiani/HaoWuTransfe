@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-dialog": "@vant/weapp/dialog/index"
+  },
+  "navigationBarTitleText": "保价详情",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#b73aa3",
+  "navigationBarTextStyle": "white"
+}

@@ -1,21 +1,5 @@
 <!--pages/subPages/zyaddress/zyaddress.wxml-->
 <view class="container">
-    <!-- <view class="zyWarp">
-        <view class="flex_l_c addressWarp">
-            <view class="addressIcon flex_c_c">
-                <van-icon name="location-o" color="#fff" />
-            </view>
-            <text class="addressText">仓库地址</text>
-        </view>
-        <view class="flex_l_c zyPhone">
-            <text style="margin-left: 32rpx;">好物仓库:</text>
-            <text>15876199988</text>
-            <view class="zyCopy flex_c_c" bindtap="copy" data-phone="15876199988">复制</view>
-        </view>
-        <view class="flex_l_c zyAddress">
-            <text style="margin-left: 32rpx;">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</text>
-        </view>
-    </view> -->
     <my-house></my-house>
     <view class="addressCard">
         <view class="cardWarp">
@@ -25,18 +9,13 @@
                     <van-icon name="info-o" />
                     请用英文填写
                 </view>
-                <view class="addressBtn flex_c_c" bindtap="skipAddress">
+                <navigator open-type="navigate" url="/pages/subPages/myaddress/myaddress" class="addressBtn flex_c_c" bindtap="skipAddress">
                     选择地址
-                </view>
+                </navigator >
             </view>
         </view>
-        <view class="addressWarp">
-            <view class="addressItem" wx:for="{{userInfo}}" wx:key="id">
-                <text class="title">{{item.title}}:</text>
-                <input class="input" style="color: {{item.state ? '': inColor}};" data-item="{{item}}" type="text" data-index="{{index}}" bindinput="inputVal" placeholder="{{item.value}}" />
-            </view>
-        </view>
+        <my-addresc></my-addresc>
     </view>
 
-    <view class="btn flex_c_c" bindtap="zyAddress">立即转运</view>
+    <view class="btn flex_c_c" bindchangeStatus="reviseStatus" bindtap="zyAddress">立即转运</view>
 </view>

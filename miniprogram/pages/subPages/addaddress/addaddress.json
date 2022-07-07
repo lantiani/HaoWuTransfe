@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-addresc":"../../../components/addaddressc/addaddressc"
+  },
+  "navigationBarTitleText": "好物转运",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#8bc34a",
+  "navigationBarTextStyle": "white"
+}

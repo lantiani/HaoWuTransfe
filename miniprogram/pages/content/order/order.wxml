@@ -1,2 +1,8 @@
 <!--pages/subPages/order/order.wxml-->
-<text>pages/subPages/order/order.wxml</text>
+<view>
+    <van-tabs active="{{ active }}" bindchange="onChange">
+        <van-tab title="{{item.title}}" wx:for="{{select}}" wx:key="id">
+            <my-orderc orderdatas="{{newData}}"></my-orderc>
+        </van-tab>
+    </van-tabs>
+</view>

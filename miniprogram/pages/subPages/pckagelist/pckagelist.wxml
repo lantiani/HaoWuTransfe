@@ -1,0 +1,9 @@
+<!--pages/subPages/pckagelist/pckagelist.wxml-->
+<view class="container flex_a_c">
+    <view class="packCard flex_c_c" wx:for="{{packCard}}">
+        <view class="cardItem">
+            <view class="cardText">{{item.title}}</view>
+            <view>{{item.text}}</view>
+        </view>
+    </view>
+</view>

@@ -12,7 +12,16 @@
         "pages/subPages/payment/payment",
         "pages/subPages/sendgoods/sendgoods",
         "pages/subPages/takegoods/takegoods",
-        "pages/subPages/appraise/appraise"
+        "pages/subPages/appraise/appraise",
+        "pages/subPages/addaddress/addaddress",
+        "pages/subPages/submitpage/submitpage",
+        "pages/subPages/mycheap/mycheap",
+        "pages/subPages/cheapdeatil/cheapdetail",
+        "pages/subPages/notice/notice",
+        "pages/subPages/flowpath/flowpath",
+        "pages/subPages/estimate/estimate",
+        "pages/subPages/pckagelist/pckagelist",
+        "pages/subPages/Insureddetail/Insureddetail"
     ],
     "tabBar": {
         "selectedColor": "#000080",

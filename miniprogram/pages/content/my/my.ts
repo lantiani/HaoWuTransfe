@@ -12,12 +12,12 @@ Page({
             { id: 4, icon: "more-o", title: "待评价", page: "/pages/subPages/appraise/appraise" },
         ],
         myData: [
-            { id: 1, title: "我的地址", icon: "arrow", page: "" },
-            { id: 2, title: "我的优惠券", icon: "arrow", page: "" },
+            { id: 1, title: "我的地址", icon: "arrow", page: "/pages/subPages/myaddress/myaddress" },
+            { id: 2, title: "我的优惠券", icon: "arrow", page: "/pages/subPages/mycheap/mycheap" },
             { id: 3, title: "活动中心", icon: "arrow", page: "" },
             { id: 4, title: "联系客服", icon: "arrow", page: "" },
-            { id: 5, title: "转运流程", icon: "arrow", page: "" },
-            { id: 6, title: "转运须知", icon: "arrow", page: "" },
+            { id: 5, title: "转运流程", icon: "arrow", page: "/pages/subPages/flowpath/flowpath" },
+            { id: 6, title: "转运须知", icon: "arrow", page: "/pages/subPages/notice/notice" },
             { id: 7, title: "关于我们", icon: "arrow", page: "" }
         ]
     }

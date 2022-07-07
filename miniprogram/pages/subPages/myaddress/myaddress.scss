@@ -1,4 +1,17 @@
 /* pages/subPages/myaddress/myaddress.wxss */
 .container {
-
+    .addAddress {
+        position: absolute;
+        bottom: 8*2rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 355*2rpx;
+        padding: 10*2rpx 0;
+        border-radius: 20*2rpx;
+        background-color: rgba(231, 105, 29, 100);
+        color: rgba(255, 255, 255, 100);
+        font-size: 14*2rpx;
+        text-align: center;
+        border: 1*2rpx solid rgba(231, 105, 29, 100);
+    }
 }

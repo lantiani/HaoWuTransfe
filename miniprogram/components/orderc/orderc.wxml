@@ -1,0 +1,22 @@
+<!--components/orderc/orderc.wxml-->
+<view class="container" wx:for="{{orderdatas}}" wx:key="id">
+    <view class="flex_l_c">
+        <text>订单号:</text>
+        <text>{{item.orderId}}</text>
+        <view class="copyOrder flex_c_c" bindtap="changeCopy" data-orderid="123123">复制</view>
+    </view>
+    <view class="orderInfo flex_a_c">
+        <view>{{item.fahuo}}</view>
+        <view class="statusWarp">
+            <image class="img" mode="aspectFill" src="../../assets/images/icon-fj.svg"></image>
+            <view class="status">状态{{item.state}}</view>
+        </view>
+        <view>{{item.shouhuo}}</view>
+    </view>
+    <view class="btnWarp flex_l_c">
+        <navigator wx:if="{{item.state === 2 }}" open-type="navigate" url="" class="orderBtn flex_c_c">确认打包</navigator>
+        <navigator open-type="navigate" url="" class="orderBtnDetail flex_c_c">详情</navigator>
+        <navigator wx:if="{{item.state === 0 || item.state === 1 }}" open-type="navigate" url="" class="orderBtn flex_c_c">去支付</navigator>
+        <navigator wx:if="{{item.state === 5 || item.state === 2 }}" open-type="navigate" url="" class="orderBtn flex_c_c">物流详情</navigator>
+    </view>
+</view>

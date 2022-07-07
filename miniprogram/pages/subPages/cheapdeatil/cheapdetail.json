@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-cheapdetailc":"../../../components/cheapdetailc/cheapdetailc"
+  }
+}

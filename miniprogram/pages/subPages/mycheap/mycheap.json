@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-cheapc":"../../../components/cheapc/cheapc"
+  }
+}

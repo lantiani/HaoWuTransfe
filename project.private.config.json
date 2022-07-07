@@ -14,7 +14,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/subPages/myaddress/myaddress",
+                    "pathName": "pages/subPages/Insureddetail/Insureddetail",
                     "query": "",
                     "scene": null,
                     "launchMode": "default"

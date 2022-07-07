@@ -1,0 +1,25 @@
+<!--components/addaddressc.wxml-->
+<form bindsubmit="submitform" class="addressWarp">
+    <view class="addressItem" wx:for="{{userInfo}}" wx:key="id">
+        <text class="title" style="color: {{titleColor}};">{{item.title}}:</text>
+        <input class="input" name="{{item.name}}" style="color: {{item.state ? '': inColor}};" data-item="{{item}}" type="text" bindinput="changeVal" placeholder="{{item.value}}" />
+    </view>
+
+    <view wx:if="{{isShow}}">
+        <view class="country flex_c_c">
+            <text class="text" style="color: {{titleColor}};">country: </text> <input class="input" placeholder="Please select a country" disabled type="text" bindtap="showArea" />
+            <van-icon class="arrow" name="arrow" />
+        </view>
+        <view class="flex_b_c openWarp">
+            <text class="default">设为默认</text>
+            <van-switch active-color="#8bc34a" class="open" checked="{{ checked }}" bindchange="onChange" size="24px" />
+        </view>
+    </view>
+    <van-transition name="fade-up" class="area" wx:if="{{show}}">
+        <van-area area-list="{{ areaList }}" title="Country" bindcancel="off" bindconfirm="sure" />
+    </van-transition>
+
+    <button wx:if="{{isShow}}" class="addAddressBtn" form-type="submit">
+        添加地址
+    </button>
+</form>

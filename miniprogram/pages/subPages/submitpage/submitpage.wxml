@@ -1,0 +1,4 @@
+<!--pages/subPages/submitpage/submitpage.wxml-->
+<view class="container">
+    {{codeText}}
+</view>

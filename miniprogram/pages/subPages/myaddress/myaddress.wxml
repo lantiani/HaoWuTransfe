@@ -1,4 +1,8 @@
 <!--pages/subPages/myaddress/myaddress.wxml-->
 <view class="container">
     <my-addressc userAddressData="{{myAddressData}}" bindradioaddress="userAddressRadio" bindaddressEdit="editAddress" bindaddressDel="delAddress" />
+
+    <navigator open-type="navigate" url="/pages/subPages/addaddress/addaddress" class="addAddress">
+        新建地址
+    </navigator>
 </view>

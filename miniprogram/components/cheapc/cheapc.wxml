@@ -1,0 +1,48 @@
+<!--components/cheap/cheap.wxml-->
+<view class="container flex_b_c" wx:for="{{cheapInfo}}" wx:key="id" bindtap="changeCheap" data-cheapdata="{{item}}">
+    <view class="yhqWarp">
+        <image class="yhqBg" mode="aspectFit" src="{{bgImg[item.state].bgPicture}}"></image>
+        <view class="yhqPrice">
+            <view>
+                <text class="price">{{item.price}}</text><text class="yuan">元</text>
+            </view>
+            <view class="yuan">满{{item.full}}元使用</view>
+        </view>
+    </view>
+    <view class="yhqContent">
+        <view class="yhqTitle">
+            {{item.title}}
+        </view>
+        <view class="yhqTime">
+            {{item.time}}
+        </view>
+    </view>
+    <view class="yhqIcon">
+        <image class="icon" mode="aspectFit" src="{{bgImg[item.state].mark}}"></image>
+        <view class="iconText">{{item.cate}}</view>
+    </view>
+    <view wx:if="{{item.state}}">
+        <view class="used">
+            <image class="usedImg" mode="aspectFit" src="{{bgImg[item.state].used}}"></image>
+        </view>
+    </view>
+</view>
+<view class="btn flex_c_c" bindtap="exchangeCode">
+    兑换优惠券
+</view>
+<van-dialog
+  use-slot
+  title="兑换优惠券"
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bindclose="onClose"
+  bind:getuserinfo="getUserInfo"
+  confirmButtonText="领取"
+  confirm-button-color="#8bc34a"
+  bindconfirm="getCode"
+>
+  <view slot="title" class="inputWarp flex_c_c">
+    <input class="input" placeholder="请输入兑换码" type="text"/>
+  </view>
+</van-dialog>

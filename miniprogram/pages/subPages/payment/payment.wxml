@@ -1,2 +1,4 @@
 <!--pages/subPages/payment/payment.wxml-->
-<text>pages/subPages/payment/payment.wxml</text>
+<view class="container">
+    
+</view>

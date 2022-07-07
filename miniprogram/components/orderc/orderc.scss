@@ -1,0 +1,76 @@
+/* components/orderc/orderc.wxss */
+@import "../../assets/common/common.scss";
+
+.container {
+    margin: 12px auto;
+    padding: 10px;
+    width: 347px;
+    background-color: rgba(255, 255, 255, 79);
+    color: rgba(16, 16, 16, 100);
+    font-size: 14px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 100);
+    box-sizing: border-box;
+
+    .copyOrder {
+        width: 31px;
+        height: 14px;
+        border-radius: 4px;
+        background-color: rgba(217, 241, 221, 100);
+        color: rgba(64, 184, 80, 100);
+        font-size: 12px;
+        border: 1px solid rgba(217, 241, 221, 100);
+        margin-left: 8px;
+    }
+
+    .orderInfo {
+        width: 80%;
+        margin: 30px;
+        color: rgba(16, 16, 16, 100);
+        font-size: 18px;
+        text-align: left;
+
+        .statusWarp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+                width: 32px;
+                height: 32px;
+            }
+
+            .status {
+                width: 42px;
+                height: 20px;
+                color: #ff6600;
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        }
+
+    }
+
+    .btnWarp {
+        .orderBtn {
+            width: 80px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 100);
+            color: rgba(236, 6, 6, 100);
+            font-size: 14px;
+            border: 1px solid rgba(236, 6, 6, 100);
+            margin-right: 6px;
+        }
+
+        .orderBtnDetail {
+            width: 80px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: rgba(76, 22, 142, 100);
+            color: rgba(255, 255, 255, 100);
+            font-size: 14px;
+            margin-right: 6px;
+        }
+    }
+}

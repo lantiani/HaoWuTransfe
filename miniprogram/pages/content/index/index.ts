@@ -48,10 +48,14 @@ Page({
     })
   },
   cardClick1() {
-    console.log('ka1');
+    wx.navigateTo({
+      url:"/pages/subPages/notice/notice"
+    })
   },
   cardClick2() {
-    console.log('ka2');
+    wx.navigateTo({
+      url:"/pages/subPages/estimate/estimate"
+    })
   },
   getIndex(e: any) {
     this.setData({

@@ -1,0 +1,88 @@
+/* pages/subPages/Insureddetail/Insureddetail.wxss */
+.container {
+    .insuredCard {
+        padding: 10px;
+        margin: 20px auto;
+        width: 347px;
+        height: 148px;
+        opacity: 0.85;
+        background-color: rgba(255, 255, 255, 79);
+        color: #101010;
+        font-size: 14px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 100);
+        box-sizing: border-box;
+
+        .orderId {
+            .iconWarp {
+                margin: 10px auto;
+
+                .cardIcon {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 8px;
+
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .title {
+                    font-weight: 700;
+                    margin: 10px 0;
+                }
+            }
+
+            .inputWarp {
+                .input {
+                    margin: auto;
+                    width: 284px;
+                    height: 34px;
+                    border-radius: 11px;
+                    color: rgba(136, 136, 136, 100);
+                    font-size: 14px;
+                    border: 1px solid rgba(187, 187, 187, 100);
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .warningWarp {
+            .warningText {
+                display: flex;
+                color: #EC0606;
+                font-size: 11px;
+                padding: 10px;
+
+                .van-icon {
+                    align-self: start;
+                    margin: 2px 4px 0 0;
+                }
+            }
+
+            .switchContent {
+                padding: 0 10px 10px;
+                border-bottom: 1px solid red;
+            }
+
+            .premium {
+                margin: 10px;
+            }
+        }
+    }
+
+    .btnWarp {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        color: #fff;
+        .btn {
+            width: 188px;
+            height: 57px;
+            background-color: #b73aa3;
+        }
+    }
+
+}

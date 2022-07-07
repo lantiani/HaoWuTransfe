@@ -1,0 +1,50 @@
+<!--pages/subPages/estimate/estimate.wxml-->
+<view class="container">
+    <view class="imgWarp">
+        <image class="img" mode="aspectFit" src="../../../assets/images/yunfei.png"></image>
+    </view>
+    <view class="content">
+        <view class="title">预估运费</view>
+
+        <view class="flex_b_c">
+            <view class="channel flex_c_c">
+                <view>
+                    <view class="marBtom">转运渠道</view>
+                    <view>普通货物</view>
+                </view>
+            </view>
+            <view class="channel flex_c_c" style="background-color:#89ec9c;border: 1px solid #89ec9c; color: #0aac29;">
+                <view>
+                    <view class="marBtom">预估重量</view>
+                    <view><input style="width: 140rpx;" placeholder="请输入重量" type="text"/></view>
+                </view>
+            </view>
+        </view>
+
+        <view class="volume flex_c_c" style="background-color: #90aef6;">
+            <view>
+                <view class="marBtom" style="text-align: center;">预估体积</view>
+                <form>
+                    <!-- 请输入 -->
+                    <view class="flex_c_c">
+                        <view class="flex_c_c">
+                            <text>长:</text><input class="input" placeholder="请输入" type="text" />
+                        </view>
+                        <view class="flex_c_c">
+                            <text>宽:</text><input class="input" placeholder="请输入" type="text" />
+                        </view>
+                        <view class="flex_c_c">
+                            <text>高:</text><input class="input" placeholder="请输入" type="text" />
+                        </view>
+                    </view>
+                </form>
+            </view>
+        </view>
+        <view class="volume flex_c_c">
+            <view style="color: #fff;">
+                <view class="marBtom">预估运费（实际结果以订单为准）</view>
+                <view style="text-align: center;">¥ 0.00</view>
+            </view>
+        </view>
+    </view>
+</view>
